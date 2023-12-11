@@ -55,22 +55,22 @@
         }
 
         .frame {
-            width: 100%;
-            height: 300px;
+            width: 1%;
+            height: 1px;
             border: none;
         }
 
         .circle {
             position: relative;
-            width: 85px;
-            height: 85px;
+            width: 140px;
+            height: 140px;
             background-color: rgba(52, 152, 219, 0.7);
-            border-radius: 50%;
+            border-radius: 100%;
             margin: 0 auto; /* Center the circle */
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 30px;
           
           font-weight: bold;
           
@@ -88,25 +88,25 @@
         .circle .small-circle:nth-child(2) {
             top: 25%;
             left: 50%;
-            animation: kitePath2 7s infinite;
+            animation: kitePath2 2s linear 0s 105;
         }
 
         .circle .small-circle:nth-child(3) {
             top: 75%;
             left: 50%;
-            animation: kitePath3 7s infinite;
+            animation: kitePath3 2s linear 0s 105;
         }
 
         .circle .small-circle:nth-child(4) {
             top: 50%;
             left: 75%;
-            animation: kitePath4 7s infinite;
+            animation: kitePath4 2s linear 0s 105;
         }
 
         .circle .small-circle:nth-child(5) {
             top: 50%;
             left: 25%;
-            animation: kitePath1 7s infinite; /* Use the same keyframes as the first circle */
+            animation: kitePath1 2s linear 0s 105; /* Use the same keyframes as the first circle */
         }
 
         @keyframes kitePath2 {
@@ -188,6 +188,7 @@
                 searchCounter++;
                 document.getElementById('searchCount').innerText = searchCounter;
             }
+              
         }
 
         function openLink(link) {
@@ -201,7 +202,6 @@
         intervalId = setInterval(generateRandomNumber, 7000);
         generateRandomNumber();
 
-        
     </script>
 </body>
 
